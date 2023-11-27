@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="people1" class="com.jmct.PeopleImpl" autowire="byType">
+        <property name="name" value="张三" ></property>
+        <property name="strength" value="100"></property>
+    </bean>
+    <bean id="people2" class="com.jmct.PeopleImpl" autowire="byType">
+        <property name="name" value="李四" ></property>
+        <property name="strength" value="100"></property>
+        </bean>
+    <bean id="weapon1" class="com.jmct.WeaponImpl">
+        <property name="name" value="大刀"></property>
+        <property name="force" value="25"></property>
+    </bean>
+</beans>
